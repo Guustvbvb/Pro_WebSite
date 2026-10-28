@@ -1,0 +1,142 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+.parent {
+    padding-top: 5px;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+}
+
+.div1 img {
+    width: 220px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.div2 {
+    grid-column-start: 3;
+}
+
+.div2 img {
+    width: 70px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: -25px;
+}
+
+.div3 {
+    grid-column: span 12 / span 12;
+    grid-row: span 6 / span 6;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div3 img {
+    width: 100%;
+    height: auto;
+    margin-top: -35px;
+}
+
+.div4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-column-start: 1;
+    grid-row-start: 7;
+    margin-top: -15px;
+}
+
+.div5 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 7;
+    margin-top: -15px;
+}
+
+.div6 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    grid-row-start: 7;
+    margin-top: -15px;
+}
+
+.div7 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 10;
+    grid-row-start: 7;
+    margin-top: -15px;
+}
+
+.div8 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 9;
+    margin-top: -15px;
+}
+
+.div9 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    grid-row-start: 9;
+    margin-top: -15px;
+}
+
+.div10 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 10;
+    grid-row-start: 9;
+    margin-top: -15px;
+}
+
+.div11 {
+    grid-column-start: 12;
+    grid-row-start: 1;
+}
+
+.div11 img {
+    width: 70px;
+    height: auto;
+    transform: translateX(40px);
+}
+
+.div12 {
+    grid-column-start: 11;
+    grid-row-start: 1;
+    margin-top: -10px;
+}
+
+.div12 img {
+    width: 90px;
+    height: auto;
+    margin-top: 20px;
+    transform: translateX(80px);
+}
